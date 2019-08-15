@@ -1,6 +1,5 @@
 # FAB: A Robust Facial Landmark Detection Framework for Motion-Blurred Videos
 
-The code is coming soon.
 
 ## Citation
 If you use this code or RWMB dataset for your research, please cite our papers.
