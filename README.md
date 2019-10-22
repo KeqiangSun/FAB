@@ -1,7 +1,13 @@
 # FAB: A Robust Facial Landmark Detection Framework for Motion-Blurred Videos
 
-Created by [Keqiang Sun]](https://keqiangsun.github.io/) at Tsinghua University.
-
+[Keqiang Sun](https://keqiangsun.github.io/),
+[Wayne Wu](https://wywu.github.io),
+[Tinghao Liu](),
+[Shuo Yang](http://shuoyang1213.me/),
+[Quan Wang](),
+[Qiang Zhou](),
+[Chen Qian](https://scholar.google.com/citations?user=AerkT0YAAAAJ&hl=en),
+[Zuochang Ye]()
 
 <div align=center>
   <img src='fig/effects.png' width="500px">
