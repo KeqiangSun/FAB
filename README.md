@@ -3,8 +3,9 @@
 Created by [Keqiang Sun]](https://keqiangsun.github.io/) at Tsinghua University.
 
 
-<img src='fig/effects.png' width="500px" align="center" />
-
+<div align=center>
+  <img src='fig/effects.png' width="500px">
+</div>
 
 We present a framework named FAB that takes advantage of structure consistency in the temporal dimension for facial landmark detection in motion-blurred videos. A structure predictor is proposed to predict the missing face structural information temporally, which serves as a geometry prior. This allows our framework to work as a virtuous circle. On one hand, the geometry prior helps our structure-aware deblurring network generates high quality deblurred images which lead to better landmark detection results. On the other hand, better landmark detection results help structure predictor generate better geometry prior for the next frame. Moreover, it is a flexible video-based framework that can incorporate any static image-based methods to provide a performance boost on video datasets. Extensive experiments on Blurred-300VW, the proposed Real-world Motion Blur (RWMB) datasets and 300VW demonstrate the superior performance to the state-of-the-art methods.
 
