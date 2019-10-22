@@ -75,7 +75,7 @@ def test(resnet_model, is_training, F, H, F_curr, H_curr, input_images_blur,
     resume(sess, FLAGS.resume_video_deblur, FLAGS.video_deblur_train_dir, 'video_deblur_model_')
     resume(sess, FLAGS.resume_resnet, FLAGS.resnet_train_dir, 'resnet_model_')
     resume(sess, FLAGS.resume_all, FLAGS.end_2_end_train_dir, '')
-    
+
     ##############################################################################
 
     gt_file_path = os.path.join(FLAGS.end_2_end_test_dir,'gt.txt')
@@ -92,7 +92,7 @@ def test(resnet_model, is_training, F, H, F_curr, H_curr, input_images_blur,
                                        NUM_CLASSES = POINTS_NUM*2, sample_set='test')
 
     test_break_flag = False
-    for x in xrange(int(np.floor(len(dataset.train_table)/FLAGS.batch_size))):
+    for x in xrange(len(dataset.train_table)-2):
 
         step = sess.run(global_step)
 
@@ -142,12 +142,18 @@ def test(resnet_model, is_training, F, H, F_curr, H_curr, input_images_blur,
         for batch_num,pre in enumerate(pres):
             for v in pre:
                 pre_file.write(str(v*255.0)+' ')
-            pre_file.write(names[batch_num])
+            if len(names) > 1:
+                pre_file.write(names[-1])
+            else:
+                pre_file.write(names[batch_num])
             pre_file.write('\n')
         for batch_num,g in enumerate(landmark_gt_test):
             for v in g:
                 gt_file.write(str(v*255.0)+' ')
-            gt_file.write(names[batch_num])
+            if len(names) > 1:
+                gt_file.write(names[-1])
+            else:
+                gt_file.write(names[batch_num])
             gt_file.write('\n')
 
         img = input_images_blur_generated[0,:,:,0:3]*255
