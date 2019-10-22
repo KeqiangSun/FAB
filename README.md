@@ -58,8 +58,8 @@ bash ./scripts/test.sh
 
 ## To Do List
 Supported dataset
-- [ ] [300 Faces In-the-Wild (300W)](https://ibug.doc.ic.ac.uk/resources/300-W/)
-- [ ] [300 Videos in the Wild(300W)](https://ibug.doc.ic.ac.uk/resources/300-VW/)
+- [x] [300 Faces In-the-Wild (300W)](https://ibug.doc.ic.ac.uk/resources/300-W/)
+- [x] [300 Videos in the Wild(300W)](https://ibug.doc.ic.ac.uk/resources/300-VW/)
 - [x] [Blurred 300VW](https://keqiangsun.github.io/projects/FAB/RWMB.html)
 - [ ] [Real-World Motion Blur(RWMB)](https://keqiangsun.github.io/projects/FAB/RWMB.html)
 
