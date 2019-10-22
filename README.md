@@ -23,7 +23,7 @@ If you use this code or RWMB dataset for your research, please cite our paper.
 ## Prerequisites
 - Linux
 - Python 2
-- * [TensorFlow](https://www.tensorflow.org/)
+- [TensorFlow](https://www.tensorflow.org/)
 
 ## Getting Started
 
